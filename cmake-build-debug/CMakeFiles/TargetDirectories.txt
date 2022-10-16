@@ -1,0 +1,4 @@
+C:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/cmake-build-debug/CMakeFiles/M_todos_Num_ricos_II.dir
+C:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/cmake-build-debug/CMakeFiles/derivatives.dir
+C:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/cmake-build-debug/CMakeFiles/rebuild_cache.dir
