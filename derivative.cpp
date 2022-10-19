@@ -35,7 +35,7 @@ vector<double> second_derivative(vector<double> fv, double t){
 
 int main(){
     double x_min = 0, x_max = 100;
-    double t = (x_max - x_min) / double(1E5);
+    double t = (x_max - x_min) / double(10E5);
     vector<double> fv;
     vector<double> f = function_def(t);
     vector<double> fp = derivative(f, t);
