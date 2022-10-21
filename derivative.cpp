@@ -6,7 +6,7 @@
 using namespace std;
 
 vector<double> function_def(double t){
-    vector<double> fv(10E5);
+    vector<double> fv(1E6);
     for (int i = 0; i < fv.size(); i++) {fv[i] = pow(float(i) * t, 2) / 2;}
     return fv;
 }
@@ -41,19 +41,7 @@ int main(){
     vector<double> fp = derivative(f, t);
     vector<double> fpp = second_derivative(f, t);
 
-
-
-    FILE* file;
-    file = fopen("derivatives.dat", "w" );
     int steps = int(f.size());
-    for (int i = 0; i < steps; i++){
-
-        fprintf(file, "%f \t %f \t %f \n", f[i] , fp[i] , fpp[i]);
-
-    }
-
-    fclose(file); //Closes the file
-
     FILE* csv;
     csv = fopen("derivatives.csv", "w" );
     fprintf(csv, "f(x), f'(x), f\"(x)\n");
@@ -63,6 +51,6 @@ int main(){
 
     }
 
-    fclose(file); //Closes the file
+    fclose(csv); //Closes the file
     return 0;
 }
