@@ -108,6 +108,74 @@ build derivatives.exe: CXX_EXECUTABLE_LINKER__derivatives_Debug CMakeFiles/deriv
   TARGET_IMPLIB = libderivatives.dll.a
   TARGET_PDB = derivatives.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target clase
+
+
+#############################################
+# Order-only phony target for clase
+
+build cmake_object_order_depends_target_clase: phony || CMakeFiles/clase.dir
+
+build CMakeFiles/clase.dir/Clase.cpp.obj: CXX_COMPILER__clase_Debug C$:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/Clase.cpp || cmake_object_order_depends_target_clase
+  DEP_FILE = CMakeFiles\clase.dir\Clase.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/. -IC:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/.idea
+  OBJECT_DIR = CMakeFiles\clase.dir
+  OBJECT_FILE_DIR = CMakeFiles\clase.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target clase
+
+
+#############################################
+# Link the executable clase.exe
+
+build clase.exe: CXX_EXECUTABLE_LINKER__clase_Debug CMakeFiles/clase.dir/Clase.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\clase.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = clase.exe
+  TARGET_IMPLIB = libclase.dll.a
+  TARGET_PDB = clase.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Ablacio
+
+
+#############################################
+# Order-only phony target for Ablacio
+
+build cmake_object_order_depends_target_Ablacio: phony || CMakeFiles/Ablacio.dir
+
+build CMakeFiles/Ablacio.dir/AblacioCardiaca.cpp.obj: CXX_COMPILER__Ablacio_Debug C$:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/AblacioCardiaca.cpp || cmake_object_order_depends_target_Ablacio
+  DEP_FILE = CMakeFiles\Ablacio.dir\AblacioCardiaca.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/. -IC:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/.idea
+  OBJECT_DIR = CMakeFiles\Ablacio.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ablacio.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Ablacio
+
+
+#############################################
+# Link the executable Ablacio.exe
+
+build Ablacio.exe: CXX_EXECUTABLE_LINKER__Ablacio_Debug CMakeFiles/Ablacio.dir/AblacioCardiaca.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Ablacio.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Ablacio.exe
+  TARGET_IMPLIB = libAblacio.dll.a
+  TARGET_PDB = Ablacio.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -134,7 +202,11 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build Ablacio: phony Ablacio.exe
+
 build M_todos_Num_ricos_II: phony M_todos_Num_ricos_II.exe
+
+build clase: phony clase.exe
 
 build derivatives: phony derivatives.exe
 
@@ -146,7 +218,7 @@ build derivatives: phony derivatives.exe
 #############################################
 # Folder: C:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/cmake-build-debug
 
-build all: phony M_todos_Num_ricos_II.exe derivatives.exe
+build all: phony M_todos_Num_ricos_II.exe derivatives.exe clase.exe Ablacio.exe
 
 # =============================================================================
 # Built-in targets

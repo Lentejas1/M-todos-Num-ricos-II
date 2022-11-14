@@ -15,3 +15,7 @@ add_executable(M_todos_Num_ricos_II
         FixedPointMethod.cpp
         )
 add_executable(derivatives derivative.cpp)
+
+add_executable(clase Clase.cpp)
+
+add_executable(Ablacio AblacioCardiaca.cpp)
