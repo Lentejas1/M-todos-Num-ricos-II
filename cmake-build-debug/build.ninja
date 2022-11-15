@@ -151,12 +151,12 @@ build clase.exe: CXX_EXECUTABLE_LINKER__clase_Debug CMakeFiles/clase.dir/Clase.c
 
 build cmake_object_order_depends_target_Ablacio: phony || CMakeFiles/Ablacio.dir
 
-build CMakeFiles/Ablacio.dir/AblacioCardiaca.cpp.obj: CXX_COMPILER__Ablacio_Debug C$:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/AblacioCardiaca.cpp || cmake_object_order_depends_target_Ablacio
-  DEP_FILE = CMakeFiles\Ablacio.dir\AblacioCardiaca.cpp.obj.d
+build CMakeFiles/Ablacio.dir/Ablació/AblacioCardiaca.cpp.obj: CXX_COMPILER__Ablacio_Debug C$:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/Ablació/AblacioCardiaca.cpp || cmake_object_order_depends_target_Ablacio
+  DEP_FILE = CMakeFiles\Ablacio.dir\Ablació\AblacioCardiaca.cpp.obj.d
   FLAGS = -g -std=gnu++14
   INCLUDES = -IC:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/. -IC:/Users/minih/Documents/GitHub/M-todos-Num-ricos-II/.idea
   OBJECT_DIR = CMakeFiles\Ablacio.dir
-  OBJECT_FILE_DIR = CMakeFiles\Ablacio.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ablacio.dir\Ablació
 
 
 # =============================================================================
@@ -166,7 +166,7 @@ build CMakeFiles/Ablacio.dir/AblacioCardiaca.cpp.obj: CXX_COMPILER__Ablacio_Debu
 #############################################
 # Link the executable Ablacio.exe
 
-build Ablacio.exe: CXX_EXECUTABLE_LINKER__Ablacio_Debug CMakeFiles/Ablacio.dir/AblacioCardiaca.cpp.obj
+build Ablacio.exe: CXX_EXECUTABLE_LINKER__Ablacio_Debug CMakeFiles/Ablacio.dir/Ablació/AblacioCardiaca.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Ablacio.dir

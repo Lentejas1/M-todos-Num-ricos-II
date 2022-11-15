@@ -18,4 +18,4 @@ add_executable(derivatives derivative.cpp)
 
 add_executable(clase Clase.cpp)
 
-add_executable(Ablacio AblacioCardiaca.cpp)
+add_executable(Ablacio Ablació/AblacioCardiaca.cpp)
